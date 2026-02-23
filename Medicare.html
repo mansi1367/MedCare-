@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+</head>
+
+<body>
+    <div class="preloader" id="preloader" style="display: none;">
+        <div id="sub-preloader" style="display: none;"></div>
+    </div>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="contactbar">
+                <div class="contactnumber">
+                    <i class="fa-solid fa-phone fa-shake"></i>
+                    <a class="padd">Call : +(9189)-4494-4245</a>
+
+                </div>
+                <div class="contactEmail">
+                    <!-- <i class="fa-solid fa-envelope fa-beat"></i> -->
+                    <i class="fa-solid fa-envelope"></i>
+                    <a class="padd">MedCare@example.com</a>
+                </div>
+                <div class="contactadd">
+                    <i class="fa-solid fa-location-dot fa-bounce"></i>
+                    <p class="padd">Moradabad,Uttar Pradesh,India</p>
+
+                </div>
+                <div class="contactsocialmedia">
+                    <a href="www.facebook.com" class="padd"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.instagram.com" class="padd"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkdein.com" class="padd"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="www.x.com" class="padd"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="login">
+                    <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                    <div class="sub-login1">
+
+                        <ul>
+                            <li><i class="fa-solid fa-user-secret"></i><a href="#appointmentWrapper">Admin</a></li>
+                            <li><i class="fa-solid fa-user-doctor"></i><a href="#appointmentWrapper">Doctor </a></li>
+                            <li><i class="fa-solid fa-user-graduate"></i><a href="#appointmentWrapper">Student</a></li>
+                            <li><i class="fa-solid fa-users slim"></i><a href="#appointmentWrapper">Patients</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="store">
+                    <a href=""><i class="fa-solid fa-store"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="panel" id="panel-bar">
+            <div class="panel-logo">
+                <div><i class="fa-solid fa-heart-pulse fa-beat-fade fa-lg  padd logo"></i></div>
+                <div class="logo-text padd">MedCare</div>
+            </div>
+            <div class="panel-menu">
+                <ul class="links">
+                    <li><a class=" white padd blue active">Home</a>
+                        <div class="sub-menu-1">
+                            <ul class="sub-home">
+                                <li><a href="#">Introduction</a></li>
+                                <li><a href="#wlcm-medcar">About MedCare</a></li>
+                                <li><a href="#">Job Careers</a></li>
+                                <li><a href="#">Research</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="padd">Departments</a>
+                        <div class="sub-menu-1">
+                            <ul class="sub-home">
+                                <li><a href="#">Specialty Center</a></li>
+                                <li><a href="#">Departments</a></li>
+                                <li><a href="#">Central Facilities</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="padd">About Us</a>
+                        <div class="sub-menu-1">
+                            <ul class="sub-home">
+                                <li><a href="#">About MedCare</a></li>
+                                <li><a href="#">Patient Care</a></li>
+                                <li><a href="#">Director</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Annual Report</a></li>
+                                <li><a href="#">Minutes of Meetings</a></li>
+                                <li><a href="#">MedCare Donations</a></li>
+                                <li><a href="#">MedCare Documentary</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="padd">Events</a>
+                        <div class="sub-menu-1">
+                            <ul class="sub-home">
+                                <li><a href="#">Conference & Workshop</a></li>
+                                <li><a href="#">Current Events</a></li>
+                                <li><a href="#">Archive Events</a></li>
+                                <li><a href="#">public Lecture</a></li>
+                                <li><a href="#">Institute Day</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="padd">Appointment</a>
+                        <div class="sub-menu-1">
+                            <ul class="sub-home">
+                                <li><a href="#">OPD Appointment </a></li>
+                                <li><a href="#">Call Center Detais</a></li>
+                                <li><a href="#">Ph. 14430</a></li>
+                                <li><a href="#">Mission Health</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <div class="panel-search">
+                <i class="fa-solid fa-magnifying-glass  padd"></i>
+                <i class="fa-solid fa-bars padd" onclick="bars()"></i>
+            </div>
+            <div class="panel-appoinment">
+                <button class="btn padd" id="Appoinment"><span><a href="#app1"
+                            target="app1">Appointment</a></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <h3>We Always Put Ours Patient First!</h3>
+        <p class="sub-hero-section">Mimply Dummy Text Of The Print Health Type Setting Area Leadspsum Dolor Onsecte
+            Dipiscing. </p>
+        <p class="sub-hero-section">Nurses serve their patients in the most important capacities.
+            We know that they serve as our first lines of communication when something goes wrong or when we are
+            concerned about health. - Lois Capps</p>
+        <button class=" hero-btn"><a>Learn More</a></button>
+
+    </div>
+    <div class="panel2">
+        <div class="panel2-img">
+
+        </div>
+        <div class="panel2-text blue" id="wlcm-medcar">
+            <div class="sub-text-wlcm">
+                <h4 class="blue">WELCOME TO MEDCARE !</h4>
+
+                <i class="fa-solid fa-minus blue"></i>
+                <i class="fa-solid fa-heart-pulse blue"></i>
+                <i class="fa-solid fa-minus blue"></i>
+            </div>
+            <div class="sub-text-title">
+                <div style="color: black;">Complete Medical</div>
+                <div style="color: black;">Solutions in One Place </div>
+            </div>
+            <div class="sub-text-options">
+                <p class="blue">Nurses serve their patients in the most important capacities. We know that they serve as
+                    our first lines of communication when something goes wrong or when we are concerned about health. -
+                    Lois Capps!</p>
+                <div class="sub-text-box blue">
+                    <div class="text-box">
+                        <div><i class="fa-solid fa-truck-medical"></i></div>
+                        <div class="text">Medical Help</div>
+                    </div>
+                    <div class="text-box">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <div class="text"><a href="#health-dep" style="text-decoration: none;">Qualified doctors</a>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <div class="text">Medical Treatment</div>
+                    </div>
+                    <div class="text-box">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                        <div class="text">Medical Professionals</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-text-btn">
+                <button>Know More</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="health-dept">
+        <div class="heading-hdpt">
+            <div class="hdpt-text">
+                <h2>How We Help !</h2>
+                <h4 class="blue health-text">Health Departments !</h4>
+                <div>
+                    <i class="fa-solid fa-heart-pulse blue hdpt-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box-hdpt">
+            <div class="box-1-hdpt">
+                <i class="fa-solid fa-brain  hdpt-icon"></i>
+                <div class="hdpt-text">Neurologist</div>
+                <div class="hdpt-para">
+                    <p>Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laudantium maxime
+                        quidem. ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn">
+                    <button>Read More</button>
+
+                </div>
+
+            </div>
+            <div class="box-2-hdpt">
+                <i class="fa-solid fa-shield-heart hdpt-icon"></i>
+                <div class="hdpt-text">Cardiology</div>
+                <div class="hdpt-para">
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur recusandae
+                        dignissimos!ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn"><button>Read More</button></div>
+            </div>
+            <div class="box-3-hdpt">
+                <i class="fa-solid fa-mortar-pestle hdpt-icon"></i>
+
+                <div class="hdpt-text">Orthopedic</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet nulla laborum.m,
+                        dolor sit amet connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn"><button>Read More</button></div>
+            </div>
+            <div class="box-4-hdpt">
+                <i class="fa-solid fa-eye hdpt-icon"></i>
+                <div class="hdpt-text">Eye Care</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor si Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        similique ad? In?t amet connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn"><button>Read More</button></div>
+            </div>
+            <div class="box-5-hdpt ">
+                <i class="fa-solid fa-book-medical hdpt-icon"></i>
+                <div class="hdpt-text">MIR</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, consequuntur
+                        suscipit. Fugiat.sit amet connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn"><button>Read More</button></div>
+            </div>
+            <div class="box-6-hdpt">
+                <i class="fa-solid fa-tooth hdpt-icon"></i>
+                <div class="hdpt-text">Dental Care</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor sit a Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                        similique commodi ea. met connt numquam, minima ipsam qui?</p>
+                </div>
+                <div class="hdpt-btn"><button>Read More</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="video-panel">
+        <div class="directToStore">
+            <div class="l">
+                <h1>#TensionMatLo</h1>
+                <h3>Aj hi Blood Test Kro</h3>
+
+            </div>
+            <div class="l">
+
+            </div>
+            <div class="l">
+
+            </div>
+            
+
+        </div>
+
+    </div>
+    <div class="app">
+        <div class="appoinment-wrapper" id="appointmentWrapper">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class=" form-box form-box login ">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+
+                    </div>
+                    <div class="remember-forget">
+                        <label for="#"><input type="checkbox">Remember me</label>
+                        <a href="#">Forget Password ?</a>
+                    </div>
+                    <div class="head-btn-2">
+                        <button type="reset" class="btn-2">Reset</button>
+                        <button type="submit" class="btn-2">Login</button>
+                    </div>
+
+                    <div class="login-register">
+                        <p>Don't have an Account?<a href="#" class="register-link" id="registerLink">Register</a></p>
+
+                    </div>
+                </form>
+            </div>
+            <div class="form-box form-box register" id="registerId">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+
+                    </div>
+                    <div class="remember-forget">
+                        <label for="#"><input type="checkbox">I agree to all terms & conditions</label>
+
+                    </div>
+                    <div class="head-btn-2">
+                        <button type="submit" class="btn-2" style="width: 100%;">Register</button>
+                    </div>
+
+                    <div class="login-register">
+                        <p>Already have an Account?<a href="#" class="login-link" id="loginLink">Login</a></p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="health-dep" id="health-dep">
+        <div class="sub-doc">
+            <h4 class="blue health-text">Professional Team !</h4>
+
+            <i class="fa-solid fa-minus blue"><i class="fa-solid fa-heart-pulse blue"></i><i
+                    class="fa-solid fa-minus blue"></i>
+            </i>
+            <!-- <i class="fa-solid fa-heart-pulse blue"></i> -->
+            <!-- <i class="fa-solid fa-minus blue"></i> -->
+
+            <h2>Meet Our Doctors</h2>
+
+        </div>
+
+
+        <div class="gallery-wrap">
+            <img src="btn.png" id="nextbtn">
+            <div class="panel-3">
+                <div>
+                    <div class="doc-1">
+
+                        <span><img src=" doc-12.jpg">
+                            <!-- <div class="doc-info">
+                                <h3>Dr.Ranjeet singh</h3>
+                                <h5>Neurologist</h5>
+                            </div> -->
+                        </span>
+                        <!-- <h3>Dr.Dhananjai</h3> -->
+                    </div>
+                    <span><img src="doc-11.jpg"></span>
+                    <span><img src="doc-10.jpg"> </span>
+                </div>
+                <div>
+                    <span><img src="doc-4.jpg"></span>
+                    <span><img src="doc-5.jpg"></span>
+                    <span><img src="doc-2.jpg"></span>
+                </div>
+                <div>
+                    <span><img src="doc-7.jpg"></span>
+                    <span><img src="doc-8.jpg"></span>
+                    <span><img src="doc-9.jpg"></span>
+                </div>
+            </div>
+            <img src="btn.png" id="backbtn">
+
+        </div>
+    </div>
+    
+
+    </div> -->
+    <div class="Appointment-panel" id="app1">
+        <div class="app-pic">
+            
+        </div>
+        <div class="app-form">
+            <div class="sub-text-form2">
+                <h4 class="white" style="text-align: center;">Take An Appoinment !</h4>
+                <i class="fa-solid fa-minus blue"></i>
+                <i class="fa-solid fa-heart-pulse blue"></i>
+                <i class="fa-solid fa-minus blue"></i>
+
+            </div>
+            <div class="sub-text-title2">
+                <div class="white">Take Appointment For</div>
+                <div class="white">Better Treatment</div>
+            </div>
+            <div class="sub-app-form">
+                <form class="form2">
+                    <input class="white" type="text" placeholder="Full Name" required>
+                    <input type="number" placeholder="   Phone*" required>
+                    <input type="email " required placeholder="Email">
+                    <select>
+                        <option value="VV!">Diseases</option>
+                        <option value="VV!">Fever</option>
+                        <option value="VV!">COVID-19</option>
+                        <option value="VV!">Aids-HIV</option>
+                        <option value="VV!">Heart-Attack</option>
+                        <option value="VV!">Typhoid</option>
+                        <option value="VV!">Dengu</option>
+                        <option value="VV!">Maleria</option>
+                        <option value="VV!">Diseases</option>
+                        <option value="VV!">Fever</option>
+                        <option value="VV!">COVID-19</option>
+                        <option value="VV!">Aids-HIV</option>
+                        <option value="VV!">Heart-Attack</option>
+                        <option value="VV!">Typhoid</option>
+                        <option value="VV!">Dengu</option>
+                        <option value="VV!">Maleria</option>
+
+                    </select>
+                    <input type="date">
+                    <input type="time">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="   Message*"></textarea>
+
+                    <button type="submit" class="app-btn">Book An Appoinment</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1"><a href="#navbar">Back to Top</a></div>
+        <div class="foot-panel2">
+            <ul>
+               
+                <p class="increse-size"><i class="fa-solid fa-heart-pulse increse-size"></i> MediCARE</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About MedCare</a>
+                <a>Investor Relations</a>
+                <a>MedCare Devices</a>
+                <a>MedCare Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Make Money with Us</a>
+                <a>Sell products on MedCare</a>
+                <a>Sell on MedCare Business</a>
+                <a> Sell apps on MedCare</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an MedCare Hub</a>
+                <a> > See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>MedCare Payment Products</p>
+                <a>MedCare Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a> Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>MedCare and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>MedCare Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="project-MedCare">
+                <h2>Hospital Website Design</h2>
+            </div>
+            <p class="padd">Collabration Product: Rishabh Choudhary & Mansi Chaudhary</p>
+
+        </div>
+        <div class="foot-panel4">
+            <div class="foot-sub1">
+                <ul>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </ul>
+            </div>
+            <a class="pages">Conditions of Use</a>
+            <a class="pages">Privacy Notice</a>
+            <a class="pages">Your Ads Privacy Choices</a>
+            <div class="copyright"><a> © 1996-2023, MedCare.com, Inc. or its affiliates</a></div>
+        </div>
+    </footer>
+    <script src="script.js">
+        let scrollContainer = document.querySelector(".panel-3");
+        let backBtn = document.getElementById("backbtn");
+        let nextBtn = document.getElementById("nextbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+
+        });
+
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.scrollLeft += 900;
+        });
+    </script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+
+</body>
+
+</html>
